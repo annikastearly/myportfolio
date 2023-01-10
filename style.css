@@ -1,0 +1,153 @@
+html, body {
+  height: 1087px;
+  background-image: url("whitebrick-background-webp");
+ 
+}
+main{
+  height: 1087px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.name {
+  background-image: url("graffitinamefinal1.png");
+  background-repeat:no-repeat;
+  background-size: 500px;
+  margin-left:360px;
+  color: transparent;
+  height: 150px;
+  width: 500px;
+}
+.graffiti {
+    
+    background-image: url("picofme.JPG");
+}
+.blur {
+  backdrop-filter: blur(3px);
+}
+
+.magic,.grid > *:hover {
+  border-color: white;
+   transform: scale(1.2);
+}
+
+.grid > * {
+ 
+  transition: all 500ms;
+}
+
+.label {
+  color: #050005;
+  font-size: 25px;
+  font-family: 'Rubik Vinyl', cursive;
+  
+}
+
+.info1 {
+  color: #000000;
+  background-color: #ff4284DF;
+  grid-area: info1;
+border: px;   
+  padding: 10px;
+  margin: 8px;
+  box-shadow: -8px 8px #9a008eCC;
+  align-self: stretch;
+  align-self: start;
+  
+}
+
+.info4 {
+  color: #000000;
+  background-color: #3bf915DF;
+  grid-area: info4;
+border: px;   
+  padding: 10px;
+  margin: 8px;
+  height: 350px;
+  box-shadow: -8px 8px #ecf00fCC;
+  align-self: stretch;
+  align-self: start;
+  
+}
+
+.picofme1 {
+  height: 470px;
+  width: 370px;
+  grid-area: pic;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+  box-shadow: -8px 8px #ff841f;
+  place-self: start end;
+}
+.picofme2 {
+  height:470px;
+  width: 370px;
+  grid-area: pic2;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+  box-shadow: -8px 8px #bb0000;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: 
+  "pic info1 info1"
+  "pic info2 info3"
+  "pic info2 pic2"
+  "info4 info2 pic2";
+}
+  .info1 {
+  grid-area: info1;
+    font-family: 'Space Grotesk', sans-serif;
+   
+  }
+.info2 {
+  grid-area: info2;
+  color: #000000;
+  background-color: #00eeffDF;
+   padding: 10px;
+  margin: 6px;
+  box-shadow: -8px 8px #80ff66CC;
+  align-self: stretch;
+  align-self: start;
+   font-family: 'Space Grotesk', sans-serif;
+  }
+.info3 {
+  grid-area: info3;
+  color: #000000;
+  background-color: #ff8d0aDF;
+   padding: 10px;
+  margin: 6px;
+  box-shadow: -8px 8px #f1ff2eCC;
+  align-self: stretch;
+  align-self: start;
+   font-family: 'Space Grotesk', sans-serif;
+  }
+
+/* Hinkle help */ 
+@media (max-width: 500px) {
+  
+  .grid {
+    display: grid;
+    grid-template-areas: 
+      "pic"
+      "info1"
+      "info2"
+      "info3"
+      "pic2"
+    "info4";
+  }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+  
+  .grid {
+    display: grid;
+    grid-template-areas: 
+      "pic info1"
+      "info2 info3"
+      "pic2 pic2"
+       "info4";
+  }
+}
